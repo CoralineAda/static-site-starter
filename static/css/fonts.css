@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Weezer";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Weezer"), local("Weezer"),
+       url(/fonts/weezer/weezerfont.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Coco Sharp";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Coco Sharp"), local("Coco Sharp"),
+       url(/fonts/coco-sharp/coco-sharp-regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Sen-Regular"), local("Sen-Regular"),
+       url(/fonts/sen/Sen-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Sen-Bold"), local("Sen-Bold"),
+       url(/fonts/sen/Sen-Bold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Sen-ExtraBold"), local("Sen-ExtraBold"),
+       url(/fonts/sen/Sen-ExtraBold.ttf) format("ttf");
+}
+

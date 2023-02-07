@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}: {{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  </head>
+  <body{{ with .Section }} id="{{ . }}"{{ end }}>
+    <div>
+      <header>
+        <figure>
+          <a href="/">
+            <img class="logo" src="/images/logo.png" alt="We Just Build Hammers logo">
+          </a>
+          <figcaption>
+            We Just Build Hammers: <br />
+            Stories from the Past, Present, and Future of Responsible Tech
+          </figcaption>
+        </figure>
+        {{ partial "navigation" . }}
+      </header>
+    </div>
+    <div id="veil">
+      {{ block "main" . }}
+      {{ end }}
+      <footer>
+        <p>
+          &copy; {{ now.Format "2006" }} <a href="https://where.coraline.codes">Coraline Ada Ehmke</a>. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

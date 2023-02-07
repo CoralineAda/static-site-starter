@@ -1,0 +1,7 @@
+baseURL = "http://TODO"
+canonifyURLs = true
+languageCode = "en-us"
+title = "TODO"
+DefaultContentLanguage = "en"
+hasCJKLanguage = true
+uglyURLs = false
